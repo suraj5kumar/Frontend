@@ -1,0 +1,1769 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Top header */
+.header {
+    height: 670px;
+    width: 100%;
+    background-color: silver;
+}
+
+
+/* Banner inside header */
+.header .banner {
+    height: 100%;
+    width: 100%;
+    background-image: url("./Images/postDreamsaleBannerBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Top Navbar */
+.header .banner .navbar {
+    height: 62px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.405);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Hamburger icon */
+#hamburger {
+    height: 35px;
+    width: 45px;
+    background-image: url("./Images/MenuOpen.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+
+/* Hamburger list */
+.header .banner .navbar .menu #hamburger_menu {
+    color: white;
+    line-height: 42px;
+    border: 1px solid #B15656;
+    background: linear-gradient(90deg, #431010 1.41%, rgba(35, 5, 5, 0.88) 100%);
+    border-radius: 12px;
+    width: 324px;
+    position: absolute;
+    top: 55px;
+    left: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    display: none;
+}
+
+
+/* Hamburger list items */
+.header .banner .navbar .menu ul li {
+    list-style: none;
+    padding: 11px 0 11px 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    opacity: 0.8;
+}
+
+
+/* Different images for different options in list */
+.header .banner .navbar .menu ul .cricket {
+    background: url("./Images/cricket-icon1.png"), url("./Images/line-hr.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 17px center, center 61px;
+    background-size: 24px 24px, contain;
+}
+
+.header .banner .navbar .menu ul .football {
+    background: url("./Images/football-icon.png"), url("./Images/line-hr.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 17px center, center 61px;
+    background-size: 24px 24px, contain;
+}
+
+.header .banner .navbar .menu ul .kabaddi {
+    background: url("./Images/kabaddi-icon.png"), url("./Images/line-hr.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 17px center, center 61px;
+    background-size: 24px 24px, contain;
+}
+
+.header .banner .navbar .menu ul .app_download {
+    background: url("./Images/appD-hm.png"), url("./Images/line-hr.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 17px center, center 61px;
+    background-size: 24px 24px, contain;
+}
+
+.header .banner .navbar .menu ul .fantasy_sport {
+    background: url("./Images/fs-sports.png"), url("./Images/line-hr.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 17px center, center 61px;
+    background-size: 24px 24px, contain;
+}
+
+.header .banner .navbar .menu ul .winners {
+    background: url("./Images/d-win-icon.png"), url("./Images/line-hr.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 17px center, center 61px;
+    background-size: 24px 24px, contain;
+}
+
+.header .banner .navbar .menu ul .world_cup {
+    background: url("./Images/ffca-icon.png"), url("./Images/line-hr.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 17px center, center 61px;
+    background-size: 24px 24px, contain;
+}
+
+
+/* Content that will appear on left side while hovering on hamburger list */
+.header .banner .navbar .menu ul li:hover::before {
+    width: 4px;
+    height: 34px;
+    content: "";
+    background: url("./Images/hamHover.png");
+    position: absolute;
+    left: 0;
+    background-size: cover;
+}
+
+
+/* Content that will appear on right side while hovering on hamburger list */
+.header .banner .navbar .menu ul li:hover::after {
+    content: url("./Images/right-arrow.png");
+    transform: scale(0.5);
+    position: absolute;
+    right: 0;
+    transition: 0.5s;
+}
+
+
+/* Hovering property on list items of hamburger */
+.header .banner .navbar .menu ul li:hover {
+    opacity: 1;
+}
+
+
+/* Dream11 logo on top left side of navbar */
+.header .banner .navbar .logo {
+    height: 50px;
+    width: 70px;
+    background-image: url("./Images/dream11LogoWhite.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: scale(1.4);
+}
+
+
+/* Language Selection part on top right side of navbar*/
+.header .banner .navbar .language_selection {
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+
+/* Language selection button on top right side of navbar */
+.header .banner .navbar .language_selection .language {
+    width: 150px;
+    height: 35px;
+    border: solid 2px #341d1c;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(50, 1, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+
+
+    #caret_up {
+        display: none;
+    }
+}
+
+
+/* Language selection list */
+.header .banner .navbar .language_selection #language_list {
+    border: solid 2px #7f0808;
+    border-radius: 18px;
+    margin-top: 7px;
+    color: white;
+    list-style: none;
+    line-height: 30px;
+    position: absolute;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgb(105, 4, 4);
+    display: none;
+}
+
+
+/* Language selection list items */
+.header .banner .navbar .language_selection ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 15px;
+    cursor: pointer;
+}
+
+.header .banner .navbar .language_selection ul li:last-child {
+    opacity: 0.5;
+    background-color: rgb(46, 1, 1);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.header .banner .navbar .language_selection ul li:last-child:hover {
+    background-color: rgb(81, 5, 5);
+}
+
+
+/* Banner image */
+.header .banner #banner_image {
+    height: 608px;
+    background-image: url("./Images/postDreamsale2024MobileBanner1.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    align-items: end;
+}
+
+
+/* Message box */
+.header .banner #banner_image .sms_box {
+    height: 83px;
+    display: flex;
+    align-items: center;
+    background-image: url("./Images/login_background.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 45px;
+}
+
+
+.header .banner #banner_image .sms_box .message {
+    height: 90%;
+    width: 30%;
+    background: linear-gradient(to right, #e10000 0, #2b0101 100%);
+    font-size: 23px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+
+/* Link */
+.header .banner #banner_image .sms_box .get_link {
+    display: flex;
+}
+
+
+/* Number input field */
+.header .banner #banner_image .sms_box .get_link .input_field {
+    height: 40px;
+    width: 250px;
+    border-radius: 21px;
+    border: solid 2px rgb(193, 193, 193);
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    span {
+        padding-left: 10px;
+        padding-right: 7px;
+        font-family: "Roboto", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    input {
+        height: 50%;
+        width: 76%;
+        padding-left: 10px;
+        border: none;
+        border-left: solid 1px rgb(109, 109, 109);
+        outline: none;
+        opacity: 0.5;
+        font-size: 13px;
+        font-family: "Roboto", sans-serif;
+    }
+}
+
+
+/* Get App Link Button */
+.header .banner #banner_image .sms_box .get_link button {
+    height: 40px;
+    width: 165px;
+    border-radius: 21px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    background: radial-gradient(circle, rgba(16, 158, 56, 1) 0%, rgba(9, 84, 30, 0.8870141806722689) 100%);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* Body of page */
+/* Official Partner Area */
+.body .official_partner_area {
+    height: 215px;
+    width: 100%;
+    background: linear-gradient(180deg, #fff2f2 0, rgba(255, 237, 237, 0) 77.72%);
+}
+
+.body .official_partner_area .official_partner h1 {
+    padding-top: 45px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+
+    span {
+        color: rgb(225, 0, 0);
+    }
+}
+
+
+/* Partners */
+.body .official_partner_area .partner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 30px;
+
+    img {
+        height: 110px;
+        width: 110px;
+        border: solid 1px silver;
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+}
+
+
+/* Start to play area */
+.body .start_to_play_area {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+
+/* Easy Start heading */
+.body .start_to_play_area .heading h1 {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: rgba(26, 26, 26, 1);
+    text-align: center;
+    padding-top: 50px;
+
+    span {
+        color: rgba(225, 0, 0, 1);
+    }
+}
+
+
+/* Fantasy cricket line */
+.body .start_to_play_area .fantasy_cricket {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    background: linear-gradient(90deg, #FFFFFF 0%, #E3EFFF 50.93%, #FFFFFF 101.85%);
+    text-align: center;
+    color: #2072E4;
+    padding: 8px 15px;
+
+    a {
+        text-decoration: none;
+        color: #034aad;
+    }
+}
+
+
+/* Paragraph */
+.body .start_to_play_area .paragraph {
+    width: 910px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(77, 77, 77, 1);
+    padding-top: 10px
+}
+
+
+/* Steps area */
+.body .start_to_play_area .steps {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    /* Step Number and Image */
+    .step {
+        height: 150px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        .con1 {
+            position: relative;
+
+            .number {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background: linear-gradient(to right, #17c749 0, #109e38 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 4px solid white;
+                font-size: 20px;
+                font-weight: 600;
+                color: white;
+                font-family: "Roboto", sans-serif;
+                position: absolute;
+                left: 16px;
+                top: -20px;
+            }
+
+            img {
+                width: 155px;
+                position: absolute;
+                left: 130px;
+                top: -30px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                border-radius: 2px;
+            }
+        }
+
+        /* Details */
+        .con2 {
+            height: 100px;
+            width: 100%;
+            background: linear-gradient(to right, #ececec 0, #fff 50%, #dddddd 100%);
+            border-radius: 8px;
+            border: 1px solid #dadada;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            gap: 8px;
+
+            h1 {
+                font-family: "Roboto", sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                padding-top: 25px;
+                padding-left: 10px;
+            }
+
+            p {
+                font-family: "Roboto", sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                color: rgba(77, 77, 77, 1);
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+
+/* How to play and (reviews and ratings area) */
+.body .how_to_play_and_reviews {
+    width: 100%;
+    height: 900px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* How to play area */
+.body .how_to_play_and_reviews .how_to_play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    h1 {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        /* padding-top: 30px; */
+
+        span {
+            color: rgb(229, 51, 51);
+        }
+    }
+
+    .para {
+        width: 65%;
+        text-align: center;
+        color: rgba(77, 77, 77, 1);
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    .video {
+        cursor: pointer;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        iframe {
+            width: 100%;
+            display: none;
+        }
+    }
+}
+
+
+/* Border between how to play and reviews and ratings*/
+.body .how_to_play_and_reviews .border {
+    width: 70%;
+}
+
+
+/* Reviews and rating */
+.body .how_to_play_and_reviews .reviews_and_rating {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    .reviews {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        h1 {
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+
+            span {
+                color: rgba(225, 0, 0, 1);
+            }
+        }
+
+        /* People reviews */
+        .people {
+            height: 300px;
+            width: 99%;
+            display: flex;
+            align-items: center;
+            overflow: scroll;
+            justify-content: center;
+            gap: 15px;
+
+            /* Person container */
+            .person {
+                position: relative;
+                height: 237px;
+                width: 320px;
+                background-color: white;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                margin-top: 10px;
+
+                /* Person image */
+                img {
+                    position: absolute;
+                    height: 70px;
+                    left: 20px;
+                    top: -25px;
+                }
+
+                /* Person name */
+                .name {
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding-top: 10px;
+                    padding-left: 100px;
+                    padding-bottom: 30px;
+                }
+
+                /* Person winning details */
+                .winning {
+                    display: flex;
+                    height: 55px;
+                    background-color: rgb(26, 26, 26);
+                    align-items: center;
+                    justify-content: space-between;
+
+                    /* Contest name */
+                    .contest h1 {
+                        font-family: "Roboto", sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: rgba(255, 255, 255, 1);
+                        padding-left: 15px;
+                    }
+
+                    /* Match */
+                    .contest p {
+                        font-family: "Roboto", sans-serif;
+                        font-size: 12px;
+                        color: rgba(168, 168, 168, 1);
+                        font-weight: 500;
+                        padding-left: 15px;
+                        padding-top: 5px;
+                    }
+
+                    /* Prize money */
+                    .money h1 {
+                        font-family: "Roboto", sans-serif;
+                        font-size: 16px;
+                        font-weight: 900;
+                        color: rgba(255, 209, 82, 1);
+                        text-decoration: 0 1px 0 #8d691e;
+                        padding-right: 15px;
+                    }
+
+                    /* Winning */
+                    .money p {
+                        font-family: "Roboto", sans-serif;
+                        font-size: 10px;
+                        color: rgba(203, 203, 203, 1);
+                        padding-left: 13px;
+                        padding-top: 3px;
+                    }
+
+                    .money .anand_winning {
+                        padding-left: 35px;
+                    }
+                }
+
+                /* People review */
+                .review {
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
+                    color: rgba(26, 26, 26, 1);
+                    line-height: 20px;
+                    padding-top: 10px;
+                    padding-left: 10px;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Overall App rating */
+.body .how_to_play_and_reviews .reviews_and_rating .ratings {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.body .how_to_play_and_reviews .reviews_and_rating .ratings .rating {
+    width: 34%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 0px;
+    margin-top: -10px;
+
+    .app_rating {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .stars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        color: rgb(252, 204, 56);
+    }
+
+    .numbers {
+        font-family: "Roboto", sans-serif;
+        font-size: 13.6px;
+        font-weight: 700;
+
+        .one {
+            padding-right: 5px;
+        }
+
+        .two {
+            color: rgba(106, 107, 105, 1);
+            padding-left: 5px;
+            border-left: solid 1px rgba(106, 107, 105, 0.466);
+        }
+    }
+}
+
+
+/* Get the App area */
+.body .get_the_app {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+
+/* Heading of get the app area */
+.body .get_the_app .head {
+    width: 65%;
+
+    h1 {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        padding-bottom: 5px;
+
+        span {
+            color: rgba(225, 0, 0, 1);
+        }
+    }
+}
+
+/* Image and details of get the app area */
+.body .get_the_app .image_and_details {
+    width: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    .image {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+
+        img {
+            width: 100%;
+            height: 330px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.body .get_the_app .image_and_details .winning {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .reward_steps {
+        height: 35%;
+
+
+        ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+
+            .one {
+                width: 10%;
+                height: 20%;
+
+                img {
+                    height: 40px;
+                }
+            }
+
+            .two {
+                width: 90%;
+                font-family: "Roboto", sans-serif;
+                font-size: 14px;
+                line-height: 20px;
+                color: rgba(77, 77, 77, 1);
+
+                a {
+                    text-decoration: none;
+                    color: rgba(3, 74, 173, 1);
+                }
+            }
+        }
+    }
+
+    .link {
+        display: flex;
+        height: auto;
+        width: 100%;
+        align-items: center;
+        gap: 25px;
+
+        img {
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+        }
+    }
+
+    .barcode {
+        display: flex;
+
+        img {
+            height: 90px;
+        }
+
+        p {
+            width: 45%;
+            padding-left: 5%;
+            padding-top: 30px;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            color: rgba(77, 77, 77, 1);
+            line-height: 20px;
+
+            a {
+                text-decoration: none;
+                color: rgba(3, 74, 173, 1);
+            }
+        }
+    }
+}
+
+
+/* Popular Fantasy sports slide */
+.body .popular_fantasy_sports {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+    padding-top: 70px;
+    padding-bottom: 10px;
+    gap: 20px;
+
+    .heading {
+        width: 80%;
+
+        h1 {
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+
+            span {
+                color: rgb(225, 0, 0);
+            }
+        }
+    }
+
+    .paragraph {
+        width: 1200px;
+
+        p {
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            color: rgba(77, 77, 77, 1);
+            text-align: center;
+            line-height: 20px;
+            padding: 0 20px;
+
+            a {
+                text-decoration: none;
+                color: rgba(3, 74, 173, 1);
+            }
+        }
+    }
+}
+
+/* Popular fantasy sports slider */
+.body .popular_fantasy_sports .slider {
+    width: 1270px;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        width: 40px;
+        height: 40px;
+        color: rgb(184, 96, 96);
+        border-radius: 50%;
+        border: none;
+        background-color: rgb(255, 210, 210);
+        flex-shrink: 0;
+        cursor: pointer;
+    }
+
+    #slides {
+        width: 1170px;
+        height: 100%;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        .slide {
+            height: 150px;
+            width: 365px;
+            flex-shrink: 0;
+            position: relative;
+            border-radius: 20px;
+            border: 1px solid #ffc6c6;
+            cursor: grab;
+
+            .fantasy_game {
+                position: absolute;
+                width: 135px;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                padding: 2px 10px;
+                border-radius: 20px;
+                left: 105px;
+                top: -18px;
+                white-space: nowrap;
+                border: 1px solid #ffc6c6;
+
+                img {
+                    height: 20px;
+                    width: 20px;
+                }
+
+                span {
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
+                    line-height: 34.5px;
+                }
+            }
+
+            p {
+                font-family: "Roboto", sans-serif;
+                font-size: 14px;
+                line-height: 20px;
+                color: rgba(77, 77, 77, 1);
+                padding: 40px 15px;
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    color: rgba(3, 74, 173, 1);
+                }
+            }
+        }
+
+        .slide:first-child {
+            margin-left: 7px;
+        }
+    }
+}
+
+
+/* FAQs Area */
+.body .FAQs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    .head {
+        width: 60%;
+
+        h1 {
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 500;
+            color: rgb(26, 26, 26, 1);
+        }
+    }
+}
+
+/* FAQ Questions */
+.body .FAQs .questions_area {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    .questions {
+        width: 550px;
+        height: auto;
+
+        .question {
+            border: 1px solid #dadada;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            line-height: 20px;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 13px 15px;
+            border-radius: 4px;
+            transition: 0.5s;
+            cursor: pointer;
+            color: rgba(26, 26, 26, 1);
+
+            .fa-chevron-up {
+                display: none;
+            }
+        }
+
+        .question:hover {
+            background-color: rgb(249, 249, 249);
+        }
+
+        .answer {
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 15px;
+            color: rgba(26, 26, 26, 1);
+            border-radius: 4px;
+            overflow: hidden;
+            height: 0;
+            transition: height 0.2s ease-in;
+
+            p {
+                padding-bottom: 20px;
+
+                a {
+                    color: rgba(3, 74, 173, 1);
+                    text-decoration: none;
+                }
+            }
+
+            ol li a {
+                color: rgba(3, 74, 173, 1);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+/* Footer of page */
+.footer {
+    width: 100%;
+    height: auto;
+}
+
+.footer .links_members_office {
+    width: 100%;
+    height: auto;
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+
+    .links {
+        width: 1030px;
+        display: flex;
+        padding-bottom: 25px;
+
+        .other_links {
+            width: 75%;
+            display: flex;
+        }
+
+        .other_links .social_media {
+            width: 51%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 200px;
+
+            .logo img {
+                height: 30px;
+            }
+
+            .social_media_links img {
+                height: 32px;
+                gap: 10px;
+                margin-left: 7px;
+            }
+
+            .social_media_links .facebook {
+                margin-left: 0;
+            }
+        }
+
+        .other_links .dream11_related_other_links {
+            display: flex;
+
+            .games,
+            .details {
+                width: 50%;
+            }
+
+            .games ul li,
+            .details ul li {
+                list-style: none;
+                margin-bottom: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .funding_and_policy {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            border-left: 1px solid #828282;
+
+            .funding_member,
+            .fairplay_policy {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            img {
+                height: 50px;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: "Roboto", sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/* Corporate_office */
+.footer .links_members_office .corporate_office {
+    width: 990px;
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    border-top: 1px solid #828282;
+
+    h1 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+}
+
+
+/* Privacy Policy Terms Conditions */
+.footer .privacy_policy_terms_conditions {
+    width: 100%;
+    height: auto;
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+    padding: 25px 0;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 1px 35px;
+    }
+
+    .privacy_policy {
+        border-right: 1px solid #828282;
+    }
+}
+
+.footer .warning {
+    padding: 18px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+
+/* Adding media queries to make it responsive for all devices */
+@media screen and (max-width:1270px) {
+    .body .popular_fantasy_sports .paragraph {
+        width: 95%;
+    }
+
+    .body .popular_fantasy_sports .slider {
+        width: 99%;
+
+        #slides {
+            width: 95%;
+        }
+    }
+
+    /* Footer area */
+    .footer .links_members_office .corporate_office {
+        width: 99.9%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    /* Start to play area */
+    .body .start_to_play_area {
+        height: auto;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+
+    /* Paragraph inside start to play area */
+    .body .start_to_play_area .paragraph {
+        width: 92%;
+    }
+
+    /* Steps */
+    .body .start_to_play_area .steps {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 0px;
+    }
+
+    /* How to play area */
+    .body .how_to_play_and_reviews {
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* How to play para */
+    .body .how_to_play_and_reviews .how_to_play .para {
+        width: 90%;
+    }
+
+    /* Embed video */
+    .body .how_to_play_and_reviews .how_to_play .video {
+        width: 100%;
+    }
+
+
+    /* People reviews scrollbar */
+    .body .how_to_play_and_reviews .reviews_and_rating .reviews .people .person:first-child {
+        margin-left: 120px;
+    }
+
+    /* Overall App Rating */
+    .body .how_to_play_and_reviews .reviews_and_rating .ratings .rating {
+        width: 90%;
+    }
+
+    /* Get the app area */
+    .body .get_the_app .image_and_details {
+        width: 99%;
+    }
+
+    /* Fantasy games slider */
+    .body .popular_fantasy_sports .slider #slides {
+        gap: 80px;
+    }
+
+    /* Footer area */
+    .footer .links_members_office .links {
+        width: 99%;
+    }
+}
+
+
+
+@media screen and (max-width:800px) {
+    .header {
+        background-color: white;
+    }
+
+    .header .banner {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    /* Navbar */
+    .header .banner .navbar {
+        background: linear-gradient(90.96deg, rgba(120, 1, 1, 0.841) .95%, rgba(43, 2, 2, 0.873) 62.15%, rgba(25, 1, 1, 0.944) 89.3%);
+        ;
+        border-radius: 0;
+    }
+
+    /* Hamburger List */
+    .header .banner .navbar .menu #hamburger_menu {
+        width: 100%;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+        height: 100vh;
+        left: 0px;
+        border-radius: 0;
+    }
+
+    /* Language */
+    .header .banner .navbar .language_selection {
+        .language {
+            width: 130px;
+        }
+
+        ul {
+            width: 130px;
+        }
+    }
+
+    /* Banner image */
+    .header .banner #banner_image {
+        height: 100%;
+        width: 100%;
+        background-image: url("./Images/postdreamsale2024BannerMob1.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        display: flex;
+        align-items: end;
+
+        .sms_box {
+            display: none;
+        }
+    }
+
+    /* Partners */
+    .body .official_partner_area .partner {
+        gap: 10px;
+
+        img {
+            height: 75px;
+            width: 75px;
+        }
+    }
+
+
+    /* Steps of steps area */
+    .body .start_to_play_area .steps {
+        gap: 15px;
+
+        .step {
+            width: 315px;
+
+            .con1 img {
+                left: 150px;
+            }
+
+            .con2 {
+                height: 110px;
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    /* People reviews scrollbar */
+    .body .how_to_play_and_reviews .reviews_and_rating .reviews .people .person:first-child {
+        margin-left: 250px;
+    }
+
+    /* Get the app area */
+    .body .get_the_app {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .body .get_the_app .image_and_details {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        .image {
+            width: 550px;
+
+            img {
+                height: 350px;
+            }
+        }
+    }
+
+    .body .get_the_app .image_and_details .winning {
+        height: auto;
+        width: 100%;
+        gap: 20px;
+
+        .reward_steps {
+            width: 80%;
+            padding-left: 25px;
+        }
+
+        .link {
+            height: auto;
+            width: 100%;
+
+            a {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 90%;
+                    height: 100px;
+                }
+            }
+        }
+
+        .barcode {
+            display: none;
+        }
+    }
+
+    /* Fantasy games slider */
+    .body .popular_fantasy_sports .slider #slides {
+        gap: 12px;
+
+        .slide {
+            height: 160px;
+            width: 342px;
+        }
+    }
+
+    /* FAQs Area */
+    .body .FAQs .questions_area {
+        width: 95%;
+    }
+
+
+    /* Footer part */
+    .footer .links_members_office {
+        padding-top: 20px;
+    }
+
+    .footer .links_members_office .links {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+        width: 100%;
+
+        /* Other links related to games */
+        .other_links {
+            width: 99.9%;
+
+            .social_media {
+                align-items: center;
+            }
+
+            .dream11_related_other_links .games,
+            .dream11_related_other_links .details {
+                width: 50%;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    li {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        /* Funding members and Fairplay policy */
+        .funding_and_policy {
+            width: 99.9%;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 15px 0;
+            border-top: 1px solid #828282;
+            border-left: none;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    /* Steps of steps area */
+    .body .start_to_play_area .steps .step {
+        width: 357px;
+
+        .con1 img {
+            left: 195px;
+        }
+
+        .con2 p {
+            font-size: 14px;
+        }
+    }
+
+    /* Get the app area image */
+    .body .get_the_app .image_and_details {
+        height: auto;
+        gap: 20px;
+
+        .image {
+            width: 95%;
+
+            img {
+                height: 95%;
+            }
+        }
+    }
+
+
+    .body .get_the_app .image_and_details .winning .reward_steps ul li .one {
+        padding-right: 10px;
+    }
+
+    /* Play and app store icons */
+    .body .get_the_app .image_and_details .winning .link a img {
+        height: 80px;
+    }
+
+    /* Fantasy games slider */
+    .body .popular_fantasy_sports .slider #slides {
+        gap: 12px;
+
+        .slide {
+            height: 180px;
+            width: 242px;
+
+            .fantasy_game {
+                left: 55px;
+            }
+        }
+    }
+
+
+    /* FAQ Area */
+    .body .FAQs .questions_area .questions {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+
+    /* Video image */
+    .body .how_to_play_and_reviews .how_to_play .video img {
+        width: 90%;
+    }
+
+    /* People reviews scrollbar */
+    .body .how_to_play_and_reviews .reviews_and_rating .reviews .people .person:first-child {
+        margin-left: 550px;
+    }
+
+    /* Fantasy games slider */
+    .body .popular_fantasy_sports .slider #slides {
+        gap: 25px;
+
+        .slide {
+            height: 150px;
+            width: 370px;
+
+            .fantasy_game {
+                left: 110px;
+            }
+        }
+
+        .slide:first-child {
+            margin-left: 20px;
+        }
+    }
+
+    /* Footer area */
+    .footer .links_members_office .links .other_links {
+        flex-direction: column;
+        align-items: center;
+
+        .social_media {
+            width: 99.9%;
+            height: auto;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #828282;
+        }
+
+        .dream11_related_other_links {
+            width: 99.9%;
+            padding-top: 20px;
+        }
+    }
+
+    /* Privacy Policy */
+    .footer .privacy_policy_terms_conditions a {
+        padding: 1px 8px;
+    }
+}
+
+
+@media screen and (max-width:385px) {
+    .body .official_partner_area {
+        height: auto;
+    }
+
+    .body .start_to_play_area .paragraph {
+        width: 90%;
+    }
+
+    /* Start to play area */
+    .body .start_to_play_area .heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            padding-top: 10px;
+            width: 80%;
+        }
+    }
+
+    /* Steps of steps area */
+    .body .start_to_play_area .steps .step {
+        width: 90%;
+
+        .con1 img {
+            left: 49%;
+        }
+
+        .con2 p {
+            padding-right: 10px;
+        }
+    }
+
+    /* People reviews scrollbar */
+    .body .how_to_play_and_reviews .reviews_and_rating .reviews .people .person:first-child {
+        margin-left: 670px;
+    }
+
+    /* Get the app area reward steps */
+    .body .get_the_app .image_and_details .winning {
+        width: 90%;
+    }
+
+    .body .get_the_app .image_and_details .winning .reward_steps {
+        width: 90%;
+    }
+
+    .body .get_the_app .image_and_details .winning .reward_steps ul li .one {
+        padding-right: 20px;
+    }
+
+    /* Play and app store icons */
+    .body .get_the_app .image_and_details .winning .link {
+        padding-left: 20px;
+
+        a img {
+            height: 55px;
+            width: 100%;
+        }
+    }
+
+
+    /* Fantasy games slider */
+    .body .popular_fantasy_sports .slider #slides {
+        gap: 25px;
+
+        .slide {
+            height: 80%;
+            width: 85%;
+            padding-bottom: 5px;
+
+            .fantasy_game {
+                left: 50px;
+            }
+        }
+    }
+}
