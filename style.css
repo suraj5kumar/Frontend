@@ -969,6 +969,7 @@
         width: 1170px;
         height: 100%;
         overflow-x: hidden;
+        scroll-behavior: smooth;
         display: flex;
         align-items: center;
         gap: 25px;
